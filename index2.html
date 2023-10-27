@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stu.css">
+    <title>Document</title>
+</head>
+<body>
+    <main style="background-color:rgb(89, 121, 53);">
+        <div class="user" style="margin-bottom: 20px;">
+            <div class="userimage" id="profile">
+            </div>
+            <p style="font-weight: 1000; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" id="user">mrakkan Gallery</p>
+            <div class="form">
+            <div id="int"><label style="font-weight: 1000;">Username:</label><input type="text" id="userchange" ><button class="sub" onclick="setUsername()">go</button></div>
+            <div id="int"><label style="font-weight: 1000;">Url:</label><input type="url" id="proimg"><button id="imgchange" onclick="setProfileimage()">go</button></div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div id="grid-pic" style="background-image: url(bandicam_2022-09-05_20-00-55-025.jpg);"></div>
+            <div id="grid-pic" style="background-image: url(bandicam_2022-09-05_20-00-55-025.jpg); background-position: -100% 175%;"></div>
+            <div id="grid-pic" class="col-span" style="background-image: url(bandicam_2022-09-05_20-00-55-025.jpg); background-position: -200%; background-size: cover;"></div>
+            <div id="grid-pic" class="row-span" style="background-image: url(bandicam_2022-09-05_20-00-55-025.jpg);"></div>
+            <div id="grid-pic" style="background-image: url(bandicam_2022-09-05_20-00-55-025.jpg);"></div>
+            <div id="grid-pic" style="background-image: url(bandicam_2022-09-05_20-00-55-025.jpg);"></div>
+            <div id="grid-pic" style="background-image: url(bandicam_2022-09-05_20-00-55-025.jpg);"></div>
+            <div id="grid-pic" style="background-image: url(bandicam_2022-09-05_20-00-55-025.jpg);"></div>
+            <div id="grid-pic" style="background-image: url(bandicam_2022-09-05_20-00-55-025.jpg);"></div>
+            <div id="grid-pic" style="background-image: url(bandicam_2022-09-05_20-00-55-025.jpg);"></div>
+        </div>
+    </main>
+    <script>
+        function setUsername(){
+            document.getElementById("user").innerHTML = document.getElementById("userchange").value + "'s Gallery";
+            
+        }
+        function setProfileimage(){
+            document.getElementById("profile").style.backgroundImage = "url(" + document.getElementById("proimg").value + ")";
+        }
+    </script>
+</body>
+</html>
