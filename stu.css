@@ -21,6 +21,7 @@ main{
     border-radius: 50%;
     background-position: center;
     filter: drop-shadow(100px);
+    position: relative;
 }
 
 input{
@@ -52,4 +53,15 @@ input{
 }
 .col-span{
     grid-row: span 3 / span 3;
+}
+.noti{
+    background-color: red;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: translate(250%, 400%);
+    text-align: center;
+    color: aliceblue;
+    text-justify: center;
 }
